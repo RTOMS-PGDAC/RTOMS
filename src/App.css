@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,90 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+.App {
+  font-family: Arial, sans-serif;
+ }
+ 
+ .App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+ }
+ 
+ .App-header .logo {
+  font-size: 24px;
+ }
+ 
+ .App-header .project-name {
+  font-size: 24px;
+  text-align: center;
+ }
+ 
+ nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+ }
+ 
+ nav ul li {
+  margin: 0 10px;
+ }
+ 
+ .App-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+ }
+ 
+ .ads {
+  font-size: 24px;
+ }
+ 
+ .services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ 
+ .card {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+ }
+ 
+ footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+ }
+ 
+ footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+ }
+ 
+ footer ul li {
+  margin: 0 10px;
+ }
+ 
+ footer p {
+  width: 50%;
+  text-align: center;
+ }
