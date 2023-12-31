@@ -26,12 +26,18 @@
 
 import React from 'react';
 import './App.css';
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min';
+import learningLogo from './Assets/RTOMSimages/LL4.png';
+import feepay from './Assets/RTOMSimages/feepay-icon2.png';
+import ncl from './Assets/RTOMSimages/NCL1.png';
 
 // import { Header, Footer, Navbar } from './Components/';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import MyCarousel from './Components/MyCarousel';
 
 function App() {
   return (
@@ -43,27 +49,67 @@ function App() {
         <Navbar />
       </div>
       <main className="App-body">
-        <div className="ads">Ads</div>
+
+        <div id="MyCarousel">
+          <MyCarousel />
+        </div>
+
+{/*         
+          <div id="carouselExample" className="carousel slide vw-100 vh-50">
+            <div className="carousel-inner" >
+              <div className="carousel-item active">
+                <img src="..." className="d-block vw-100% vh-50%" alt="First Slide" />
+              </div>
+              <div className="carousel-item">
+                <img src="..." className="d-block vw-100% vh-50%" alt="Second Slide" />
+              </div>
+              <div className="carousel-item">
+                <img src="..." className="d-block vw-100% vh-50%" alt="Third Slide" />
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div> */}
+
+        
+        
+
         <div className="container">
 
 
-          {/* <div class="card">
-            <img src="..." class="card-img-top" alt="..."/>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Apply Here</a>
-              </div>
-          </div> */}
+          <div className="box">
+            <img src={learningLogo} className="card-img-top" alt="learning logo" />
+            <div className="card-body">
+              <h5 className="card-title">Drivers/ Learners License</h5>
+              <p className="card-text">You can apply here for drivers or learners License.</p>
+              <a href="#" className="btn btn-primary">Apply Here</a>
+            </div>
+          </div>
+          <div className="box">
+            <img src={feepay} className="card-img-top" alt="learning logo" />
+            <div className="card-body">
+              <h5 className="card-title">Online Test/ Appointment</h5>
+              <p className="card-text">You can apply here for Online Test/ Appointment.</p>
+              <a href="#" className="btn btn-primary">Apply Here</a>
+            </div>
+          </div>
+          <div className="box">
+            <img src={ncl} className="card-img-top" alt="learning logo" />
+            <div className="card-body">
+              <h5 className="card-title">Vehicle Registration</h5>
+              <p className="card-text">You can apply here for Vehicle Registration.</p>
+              <a href="#" className="btn btn-primary">Apply Here</a>
+            </div>
+          </div>
 
 
-
-
-          <div className="box">Drivers/ Learners License</div>
-          <div className="box">RTOMS</div>
-          <div className="box">Online Test/ Appointment</div>
-          {/* <div className="box">Ads</div> */}
-          <div className="box">Vehicle Registration</div>
+          
         </div>
       </main>
       <div id="footer">
