@@ -88,6 +88,27 @@
   align-items: center;
   flex-wrap: wrap;
  }
+
+ .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #f8f9fa;
+  flex: 1; /* Equal flex distribution among boxes */
+  margin: 5px; /* Add some margin for spacing */
+  text-align: center;
+  /* border-radius: 5px; */
+  border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  30px 30px 60px #bebebe,
+             -30px -30px 60px #ffffff;
+}
  
  .card {
   margin: 10px;
