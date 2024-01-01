@@ -3,7 +3,7 @@ import Logo from '../Assets/RTOMSimages/logo.webp';
 const Header = () => {
   return (
     <header className="App-header">
-      <div className="">
+      <div>
       <img src={Logo} className="logo" alt="Logo"/>
 
       </div>

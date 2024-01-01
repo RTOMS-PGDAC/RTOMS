@@ -37,25 +37,43 @@
   }
 } */
 
+
+html{
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .App {
   font-family: Arial, sans-serif;
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+
  }
  
  .App-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 2rem;
   background-color: #282c34;
   color: white;
+  /* font-size: 2.4rem; */
  }
  
  .App-header .logo {
-  font-size: 24px;
+  /* font-size: 2.4rem; */
  }
  
  .App-header .project-name {
-  font-size: 24px;
+  /* font-size: 2.4rem; */
   text-align: center;
  }
 
@@ -63,33 +81,36 @@
   display: flexbox;
   width: auto;
   height: auto;
-  max-width: 50px;
+  max-width: 5rem;
  }
  
  nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  padding: 1rem;
   background-color: #f8f9fa;
  }
  
  nav ul li {
-  margin: 0 10px;
+  margin: 0 1rem;
+  font-size: 2.4rem;
  }
  
  .App-body {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 2rem;
+  /* font-size: 2.4rem; */
  }
  
  .ads {
 
-  font-size: 250px;
-  margin-bottom: 20px; 
+  font-size: 25rem;
+  margin-bottom: 2rem; 
  }
  
  .services {
@@ -97,60 +118,80 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 2.4rem;
  }
+header h1{
+  font-size: 5rem;
+ }
+.card-text{
+  font-size: 1.4rem;
+}
 
+.btn.btn-primary{
+  font-size: 2.4rem;
+}
  .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* font-size: 2.4rem; */
   /* max-width: 100%; */
   /* flex-wrap: wrap; */
 }
 
 .box {
   box-sizing: border-box;
-  padding: 20px;
-  border: 1px solid #000000;
+  padding: 2rem;
+  border: 0.1rem solid #000000;
   flex: 1; /* Equal flex distribution among boxes */
-  margin: 50px; /* Add some margin for spacing */
+  margin: 5rem; /* Add some margin for spacing */
   text-align: center;
-  /* border-radius: 5px; */
-   border-radius: 50px;
+  /* border-radius: 0.5rem; */
+   border-radius: 5rem;
+   
 /*background: #e0e0e0;
-box-shadow:  30px 30px 60px #bebebe,
-             -30px -30px 60px #ffffff; */
+box-shadow:  3rem 3rem 6rem #bebebe,
+             -3rem -3rem 6rem #ffffff; */
 }
  
  .card {
-  margin: 10px;
-  padding: 20px;
+  margin: 1rem;
+  padding: 2rem;
   background-color: #f8f9fa;
-  border-radius: 5px;
-  width: 200px;
+  border-radius: 0.5rem;
+  width: 20rem;
   text-align: center;
  }
  
- footer {
+ .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  text-align: center;
+  padding: 0.5rem;
   background-color: #282c34;
   color: white;
+  margin-top: auto;  /* //changed */
  }
  
- footer ul {
+ .footer ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  /* width: 2rem; */
  }
  
- footer ul li {
-  margin: 0 10px;
+ .footer ul li {
+  margin: 0 1rem;
+  font-size: 1.4rem;
  }
  
- footer p {
+ .container p {
   width: 50%;
   text-align: center;
+  font-size: 2rem;
+ }
+
+ .card-title{
+  font-size: 2.4rem;
  }
